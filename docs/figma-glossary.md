@@ -1,0 +1,3 @@
+# Figma Glossary
+
+## Concepts

@@ -1,0 +1,480 @@
+.rectangleDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #c4c4c4;
+  width: 1280px;
+  height: 72px;
+}
+.div {
+  position: absolute;
+  top: 27px;
+  left: 34px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+}
+.subtitle {
+  left: 59px;
+  font-family: DM Sans;
+}
+.privacyPolicyDiv,
+.subtitle,
+.termsOfUse {
+  position: absolute;
+  top: 20px;
+  line-height: 32px;
+  display: inline-block;
+}
+.privacyPolicyDiv {
+  left: 233px;
+  font-weight: 600;
+}
+.termsOfUse {
+  left: 391px;
+  font-family: DM Sans;
+}
+.footerMaingroupDiv {
+  position: absolute;
+  top: 1799px;
+  left: 0;
+  width: 1280px;
+  height: 72px;
+  color: #2d2d2d;
+  font-family: Poppins;
+}
+.startupDesignFrame {
+  position: absolute;
+  top: 1632px;
+  left: 75px;
+  font-size: 16px;
+  line-height: 26px;
+  display: inline-block;
+  width: 304px;
+  height: 23.74px;
+}
+.youCanDecideWheth {
+  top: 1648px;
+  font-size: 16px;
+  line-height: 26px;
+  width: 432px;
+  height: 92px;
+}
+.theMostImportantP,
+.varietyOfDesigns,
+.youCanDecideWheth {
+  position: absolute;
+  left: 736px;
+  display: inline-block;
+}
+.varietyOfDesigns {
+  top: 1609px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #1e0e62;
+  width: 470px;
+}
+.theMostImportantP {
+  top: 1485px;
+  font-size: 16px;
+  line-height: 26px;
+  width: 307px;
+}
+.twentyFiveAwesome {
+  top: 1440px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #1e0e62;
+  width: 199.85px;
+}
+.howStartupFramewor,
+.theGeneratorAppIs,
+.twentyFiveAwesome {
+  position: absolute;
+  left: 736px;
+  display: inline-block;
+}
+.theGeneratorAppIs {
+  top: 1316px;
+  font-size: 16px;
+  line-height: 26px;
+  width: 408px;
+  height: 83px;
+}
+.howStartupFramewor {
+  top: 1271.2px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #1e0e62;
+  width: 470px;
+}
+.videoFaqPurple1Icon {
+  position: absolute;
+  top: 1327px;
+  left: 75px;
+  border-radius: 30px;
+  width: 523px;
+  height: 295px;
+  object-fit: cover;
+}
+.newJoinersSpan {
+  font-size: 24px;
+}
+.faqNewjoinersB {
+  position: absolute;
+  top: 1252px;
+  left: 75px;
+  letter-spacing: -0.4px;
+  line-height: 52px;
+  display: inline-block;
+  color: #1e0e62;
+  font-size: 42px;
+}
+.lineDiv {
+  position: absolute;
+  top: 1266.25px;
+  left: 669.25px;
+  border-right: 1.5px solid #acacac;
+  box-sizing: border-box;
+  width: 1.5px;
+  height: 428.5px;
+  opacity: 0.8;
+}
+.aboutGrayBannerIcon,
+.startupFrameworkIn {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+.aboutGrayBannerIcon {
+  right: 0.63%;
+  left: -0.62%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.startupFrameworkIn {
+  right: 0;
+  left: 0;
+  line-height: 28px;
+  font-weight: 500;
+  display: inline-block;
+}
+.descriptiontPhoto03Div,
+.maskIcon {
+  position: absolute;
+  height: 29.47%;
+  width: 17.81%;
+  top: 57.95%;
+  right: 9.84%;
+  bottom: 12.58%;
+  left: 72.34%;
+}
+.maskIcon {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.aboutPhoto03Div {
+  position: absolute;
+  height: 28.95%;
+  width: 13.28%;
+  top: 22.37%;
+  right: 12.19%;
+  bottom: 48.68%;
+  left: 74.53%;
+}
+.takeALook {
+  font-weight: 500;
+}
+.takeALookToOur {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+.privacyStatementB {
+  font-family: DM Sans;
+  color: rgba(159, 23, 161, 0.4);
+}
+.dataIsSecure {
+  margin: 0;
+}
+.startupsCanSaveMo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  line-height: 28px;
+  display: inline-block;
+}
+.aboutPhoto02Div,
+.descriptiontPhoto02Div {
+  position: absolute;
+  height: 22.11%;
+  width: 17.81%;
+  top: 57.95%;
+  right: 41.09%;
+  bottom: 19.95%;
+  left: 41.09%;
+}
+.aboutPhoto02Div {
+  height: 28.95%;
+  width: 13.28%;
+  top: 22.37%;
+  right: 43.44%;
+  bottom: 48.68%;
+  left: 43.28%;
+}
+.descriptiontPhoto01Div {
+  position: absolute;
+  height: 22.11%;
+  width: 17.81%;
+  top: 57.95%;
+  right: 72.34%;
+  bottom: 19.95%;
+  left: 9.84%;
+}
+.aboutPhoto01Div,
+.groupDiv {
+  position: absolute;
+  height: 28.95%;
+  width: 13.28%;
+  top: 22.37%;
+  right: 74.69%;
+  bottom: 48.68%;
+  left: 12.03%;
+}
+.groupDiv {
+  height: 20.31%;
+  width: 100%;
+  top: 41.48%;
+  right: 0;
+  bottom: 38.21%;
+  left: 0;
+  text-align: center;
+}
+.imagePurpleWavesIcon {
+  position: absolute;
+  top: 169px;
+  left: 693px;
+  width: 535px;
+  height: 539px;
+  object-fit: cover;
+}
+.termsOfService {
+  color: rgba(130, 43, 171, 0.69);
+}
+.mainDescriptionDiv,
+.mainFreeTxtDiv {
+  position: absolute;
+  display: inline-block;
+  mix-blend-mode: normal;
+}
+.mainFreeTxtDiv {
+  top: 312px;
+  left: 85px;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: left;
+  width: 350px;
+  height: 26px;
+}
+.mainDescriptionDiv {
+  top: 150px;
+  left: 44px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000;
+  width: 430.63px;
+  height: 74.57px;
+  opacity: 0.7;
+}
+.mainTitleB,
+.purpleRectangleDiv {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.mainTitleB {
+  height: 36.82%;
+  bottom: 63.18%;
+  font-size: 58px;
+  letter-spacing: -1px;
+  line-height: 70px;
+  display: inline-block;
+  color: #a100ff;
+}
+.purpleRectangleDiv {
+  height: 100%;
+  bottom: 0;
+  border-radius: 100px;
+  background-color: #a100ff;
+}
+.rhTextDiv {
+  position: absolute;
+  height: 48.75%;
+  width: 90.07%;
+  top: 26.25%;
+  right: 4.78%;
+  bottom: 25%;
+  left: 5.15%;
+  line-height: 26px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonsDiv {
+  position: absolute;
+  top: 252.57px;
+  left: 85px;
+  width: 155.43px;
+  height: 53.33px;
+  overflow: hidden;
+  color: #fff;
+}
+.whiteRectangleDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 100px;
+  border: 2px solid #ebeaed;
+  box-sizing: border-box;
+}
+.newjointerTextDiv {
+  position: absolute;
+  height: 48.75%;
+  width: 86.21%;
+  top: 26.25%;
+  right: 6.71%;
+  bottom: 25%;
+  left: 7.08%;
+  line-height: 26px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonsDiv1 {
+  position: absolute;
+  top: 253px;
+  left: 260px;
+  width: 155.43px;
+  height: 53.33px;
+  overflow: hidden;
+  color: #1e0e62;
+}
+.groupDiv1 {
+  position: absolute;
+  top: 261px;
+  left: 55px;
+  width: 519.31px;
+  height: 338px;
+  text-align: center;
+}
+.rectangleDiv1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+.aboutDiv,
+.aboutDiv1,
+.aboutDiv2,
+.homeDiv {
+  position: absolute;
+  height: 100%;
+  width: 14.06%;
+  top: 0;
+  right: 57.14%;
+  bottom: 0;
+  left: 28.8%;
+  line-height: 22px;
+  font-weight: 500;
+  display: inline-block;
+}
+.aboutDiv1,
+.aboutDiv2,
+.homeDiv {
+  height: 60.53%;
+  width: 20.63%;
+  right: 0;
+  bottom: 39.47%;
+  left: 79.37%;
+}
+.aboutDiv2,
+.homeDiv {
+  height: 100%;
+  width: 14.29%;
+  right: 28.8%;
+  bottom: 0;
+  left: 56.92%;
+}
+.homeDiv {
+  width: 19.27%;
+  right: 80.73%;
+  left: 0;
+}
+.mainRibbonHeaderDiv {
+  position: absolute;
+  height: 39.18%;
+  width: 34.45%;
+  top: 34.05%;
+  right: 6.41%;
+  bottom: 26.78%;
+  left: 59.14%;
+  mix-blend-mode: normal;
+}
+.rectangleIcon {
+  position: absolute;
+  height: 58.9%;
+  width: 11.88%;
+  top: 17.81%;
+  right: 84.38%;
+  bottom: 23.29%;
+  left: 3.75%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.mainRibbonDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 73px;
+  font-size: 20px;
+  color: #000;
+}
+.landingPageDiv {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1871px;
+  text-align: left;
+  font-size: 18px;
+  color: rgba(21, 20, 57, 0.4);
+  font-family: DM Sans;
+}
