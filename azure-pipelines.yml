@@ -14,6 +14,7 @@ variables:
   location: 'eastus2'
 
 stages:
+
 - stage: Build
   displayName: Build stage
 
@@ -23,34 +24,36 @@ stages:
     pool:
       vmImage: $(vmImageName)
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '12.x'
-  displayName: 'Install Node.js'
+ steps:
+ - task: NodeTool@0
+   displayName: 'Install Node.js'
+   inputs:
+     versionSpec: '12.x'
 
-- task: ArchiveFiles@2
-  displayName: 'Archive files'
-  inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-    includeRootFolder: false
-    archiveType: zip
-    archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-    replaceExistingArchive: true
 
-- upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-  artifact: drop
+ - task: ArchiveFiles@2
+   displayName: 'Archive files'
+   inputs:
+     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+     includeRootFolder: false
+     archiveType: zip
+     archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+     replaceExistingArchive: true
 
-- script: |
-    npm install
-    npm run build --if-present
-    npm run test --if-present
-  displayName: 'npm install and build and test'
+ - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+   artifact: drop
+
+ - script: |
+     npm install
+     npm run build --if-present
+     npm run test --if-present
+   displayName: 'npm install and build and test'
 
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build
   condition: succeeded()
+  
   jobs:
   - deployment: Deploy
     displayName: Deploy
