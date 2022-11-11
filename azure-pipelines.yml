@@ -1,58 +1,49 @@
 trigger:
 - none
 
-pool:
-  vmImage: ubuntu-latest
-
-variables: 
-  buildConfiguration: 'Release' 
-
-  resourceGroupName: 'DefaultRG'
-  azureServiceConnection: 'FrankConnection'
-  deployment: 'deploywebapp'
-  templateFile: 'main.bicep'
-  location: 'eastus2'
+variables:
+  azureSubscription: '5156f0c3-0314-436e-a712-5a97fe5cc0f1'
+  webAppName: 'nodejs-cicd-frank'
+  environmentName: 'nodejs-cicd-frank'
+  vmImageName: 'ubuntu-latest'
 
 stages:
-
 - stage: Build
   displayName: Build stage
-
   jobs:  
   - job: Build
     displayName: Build
     pool:
       vmImage: $(vmImageName)
 
- steps:
- - task: NodeTool@0
+steps:
+- task: NodeTool@0
   inputs:
     versionSpec: '12.x'
   displayName: 'Install Node.js'
 
- - script: |
-     npm install
-     npm run build --if-present
-     npm run test --if-present
-   displayName: 'npm install and build and test'
+- task: ArchiveFiles@2
+  displayName: 'Archive files'
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    includeRootFolder: false
+    archiveType: zip
+    archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+    replaceExistingArchive: true
 
- - task: ArchiveFiles@2
-   displayName: 'Archive files'
-   inputs:
-     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-     includeRootFolder: false
-     archiveType: zip
-     archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-     replaceExistingArchive: true
+- upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+  artifact: drop
 
- - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-   artifact: drop
+- script: |
+    npm install
+    npm run build --if-present
+    npm run test --if-present
+  displayName: 'npm install and build and test'
 
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build
   condition: succeeded()
-  
   jobs:
   - deployment: Deploy
     displayName: Deploy
@@ -64,7 +55,7 @@ stages:
         deploy:
           steps:            
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: nodejs-WebApp'
+            displayName: 'Azure Web App Deploy: nodejs-cicd-16353'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
