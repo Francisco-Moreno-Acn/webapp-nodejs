@@ -7,13 +7,10 @@ trigger:
 - none
 
 pool:
-  vmImage: windows-latest
+  vmImage: ubuntu-latest
 
-variables:
-
-  azureSubscription: '5156f0c3-0314-436e-a712-5a97fe5cc0f1'
-  webAppName: 'devopswebapp'
-  environmentName: 'non-prod'
+variables: 
+  buildConfiguration: 'Release' 
   resourceGroupName: 'DefaultRG'
   azureServiceConnection: 'FrankConnection'
   deployment: 'webappdeploy'
