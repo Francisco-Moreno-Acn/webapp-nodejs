@@ -13,6 +13,7 @@ variables:
   buildConfiguration: 'Release' 
   resourceGroupName: 'DefaultRG'
   azureServiceConnection: 'FrankConnection'
+  environmentName: 'Test'
   deployment: 'webappdeploy'
   templateFile: 'main.bicep'
   location: 'eastus2'
