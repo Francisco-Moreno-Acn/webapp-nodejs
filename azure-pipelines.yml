@@ -14,7 +14,7 @@ variables:
   webAppName: 'devopswebapp'
   environmentName: 'Test'
   resourceGroupName: 'DefaultRG'
-  azureServiceConnection: 'FrankConnection'
+  azureServiceConnection: 'ATC-DevOps-Azure (5156f0c3-0314-436e-a712-5a97fe5cc0f1)'
   deployment: 'webappdeploy'
   templateFile: 'main.bicep'
   location: 'eastus2'
