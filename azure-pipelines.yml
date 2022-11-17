@@ -60,7 +60,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: nodejsxpress'
+            displayName: 'Azure Web App Deploy: nextjsapp'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
