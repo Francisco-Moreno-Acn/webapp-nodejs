@@ -7,17 +7,9 @@ trigger:
 - none
 
 variables:
-
-  # Azure Resource Manager connection created during pipeline creation
   azureSubscription: '58c897de-e2fe-43c7-8b3f-3e2774d816fc'
-
-  # Web app name
   webAppName: 'nodejsxpress'
-
-  # Environment name
   environmentName: 'nodejsxpress'
-
-  # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
 stages:
@@ -32,7 +24,7 @@ stages:
     steps:
     - task: NodeTool@0
       inputs:
-        versionSpec: '16.x'
+        versionSpec: '18.x'
       displayName: 'Install Node.js'
 
     - script: |
@@ -73,6 +65,6 @@ stages:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
               appName: $(webAppName)
-              runtimeStack: 'NODE|16.10'
+              runtimeStack: 'NODE|18.x'
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
               startUpCommand: 'npm run start'
