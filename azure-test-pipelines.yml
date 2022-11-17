@@ -1,16 +1,11 @@
 trigger:
 - none
 
-pool:
-  vmImage: ubuntu-latest
-
-variables: 
-  buildConfiguration: 'Release' 
-  resourceGroupName: 'DefaultRG'
-  azureServiceConnection: 'FrankConnection'
-  deployment: 'webappdeploy'
-  templateFile: 'main.bicep'
-  location: 'eastus2'
+variables:
+  azureSubscription: '683fdd9b-21c8-457e-a19b-08895df98e8f'
+  webAppName: 'nodexpress'
+  environmentName: 'nodexpress'
+  vmImageName: 'ubuntu-latest'
 
 stages:
 - stage: Build
