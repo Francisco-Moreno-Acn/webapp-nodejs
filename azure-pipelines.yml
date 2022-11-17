@@ -8,8 +8,8 @@ trigger:
 
 variables:
   azureSubscription: '58c897de-e2fe-43c7-8b3f-3e2774d816fc'
-  webAppName: 'nodejsxpress'
-  environmentName: 'nodejsxpress'
+  webAppName: 'nextjsapp'
+  environmentName: 'nextjsapp'
   vmImageName: 'ubuntu-latest'
 
 stages:
