@@ -1,11 +1,16 @@
 trigger:
 - none
 
-variables:
-  azureSubscription: '5156f0c3-0314-436e-a712-5a97fe5cc0f1'
-  webAppName: 'nodejs-cicd-frank'
-  environmentName: 'nodejs-cicd-frank'
-  vmImageName: 'ubuntu-latest'
+pool:
+  vmImage: ubuntu-latest
+
+variables: 
+  buildConfiguration: 'Release' 
+  resourceGroupName: 'DefaultRG'
+  azureServiceConnection: 'FrankConnection'
+  deployment: 'webappdeploy'
+  templateFile: 'main.bicep'
+  location: 'eastus2'
 
 stages:
 - stage: Build
